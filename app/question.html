@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>It's For You - Now Smile!</title>
+  <!-- Google Fonts for a cartoonish style -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Comic+Neue:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Comic Neue', cursive;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 5px dashed #ff6f61;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 36px;
+      color: #ff6f61;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    .video-container img {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .question p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d85a50;
+      transform: translateY(-5px);
+    }
+
+    .yes {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>真的?</h1>
+    <div class="video-container">
+      <img src="../img/sleep.webp" alt="Cat Sleeping" width="200" height="200" />
+    </div>
+    <div class="question">
+      <p>你睡觉时看起来像这样吗?</p>
+    </div>
+    <div class="button-container">
+      <button class="button yes" id="yes-btn">Yes</button>
+      <button class="button no">No, I'm a cool sleeper!</button>
+    </div>
+  </div>
+
+  <audio id="music" autoplay loop>
+    <source src="../music/ahatamatarmusic.mp3" type="audio/mp3" />
+  </audio>
+
+  <script>
+    eval(atob('ZG9jdW1lbnQuYm9keS5pbm5lckhUTUwgKz0gJzxwIHN0eWxlPSJwb3NpdGlvbjogZml4ZWQ7IGJvdHRvbTogMTBweDsgd2lkdGg6IDEwMCU7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDA7IGZvbnQtc2l6ZTogMTZweDsiPlZpc2l0IG15IEdpdEh1YjogPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2NoYW5nbWVuMSIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vZ2l0aHViLmNvbS9jaGFuZ21lbjE8L2E+PC9wPic7'));
+  </script>
+
+</body>
+
+</html>
